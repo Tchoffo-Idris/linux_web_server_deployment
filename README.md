@@ -429,41 +429,31 @@ The request is also recorded in the access log.
 The repository is organized to separate documentation, configuration examples, website files, scripts, screenshots, and architecture diagrams.
 
 ```text
-linux-web-server-deployment/
-│
+linux_web_server_deployment/
 ├── README.md
-├── .gitignore
 ├── LICENSE
-│
-├── docs/
-│   ├── architecture.md
-│   ├── deployment.md
-│   ├── testing.md
-│   └── troubleshooting.md
-│
-├── scripts/
-│   └── verify-webserver.sh
-│
 ├── configs/
 │   ├── mysite.nginx.conf
-│   └── ufw-rules.txt
-│
-├── site/
-│   └── index.html
-│
+│   └── ufw-rule.txt
+├── diagrams/
+├── docs/
+│   ├── architecture.md
+│   ├── deployment-checklist.md
+│   ├── testing.md
+│   └── troubleshooting.md
 ├── screenshots/
 │   ├── 01-nginx-installed.png
 │   ├── 02-default-page.png
-│   ├── 03-site-deployed.png
+│   ├── 03-site-deploy.png
 │   ├── 04-server-block-config.png
-│   ├── 05-ufw-rules.png
-│   ├── 06-systemctl-status.png
-│   ├── 07-access-log.png
-│   ├── 08-error-log.png
-│   └── 09-final-verification.png
-│
-└── diagrams/
-    └── architecture.png
+│   ├── 05-server-block-config-test.png
+│   ├── 06-ufw-rules.png
+│   ├── 07-verifying-service.png
+│   └── 08-access-logs.png
+├── scripts/
+│   └── verify-webserver.sh
+└── site/
+    └── index.html
 ```
 
 ---
@@ -1425,43 +1415,31 @@ The project should not be considered complete until the following checks have be
 The final GitHub repository is organized as follows:
 
 ```text
-linux-web-server-deployment/
-│
+linux_web_server_deployment/
 ├── README.md
-│
-├── .gitignore
-│
 ├── LICENSE
-│
-├── docs/
-│   ├── architecture.md
-│   ├── deployment.md
-│   ├── testing.md
-│   └── troubleshooting.md
-│
-├── scripts/
-│   └── verify-webserver.sh
-│
 ├── configs/
 │   ├── mysite.nginx.conf
-│   └── ufw-rules.txt
-│
-├── site/
-│   └── index.html
-│
+│   └── ufw-rule.txt
+├── diagrams/
+├── docs/
+│   ├── architecture.md
+│   ├── deployment-checklist.md
+│   ├── testing.md
+│   └── troubleshooting.md
 ├── screenshots/
 │   ├── 01-nginx-installed.png
 │   ├── 02-default-page.png
-│   ├── 03-site-deployed.png
+│   ├── 03-site-deploy.png
 │   ├── 04-server-block-config.png
-│   ├── 05-ufw-rules.png
-│   ├── 06-systemctl-status.png
-│   ├── 07-access-log.png
-│   ├── 08-error-log.png
-│   └── 09-final-verification.png
-│
-└── diagrams/
-    └── architecture.png
+│   ├── 05-server-block-config-test.png
+│   ├── 06-ufw-rules.png
+│   ├── 07-verifying-service.png
+│   └── 08-access-logs.png
+├── scripts/
+│   └── verify-webserver.sh
+└── site/
+    └── index.html
 ```
 
 ---
